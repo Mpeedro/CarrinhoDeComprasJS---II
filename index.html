@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="PT-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,42 +7,42 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Carrinho de Compras</h1>
+    <h1>Tabacaria do Pedro</h1>
     <div class="products">
         <div class="product">
-            <img src="https://via.placeholder.com/150" alt="Produto 1">
-            <h2>Produto 1</h2>
-            <p>Descrição do Produto 1</p>
-            <p>Preço: R$ 10,00</p>
-            <button onclick="addToCart('Produto 1', 10)">Adicionar ao Carrinho</button>
+            <img src="imgs/fumo.webp" alt="Produto 1">
+            <h2>Fumo Trevo</h2>
+            <p>Fumo Trevo 45g</p>
+            <p>Preço: R$ 7,99</p>
+            <button onclick="addToCart('Fumo Trevo', 7.99)">Adicionar ao Carrinho</button>
         </div>
         <div class="product">
-            <img src="https://via.placeholder.com/150" alt="Produto 2">
-            <h2>Produto 2</h2>
-            <p>Descrição do Produto 2</p>
+            <img src="imgs/palha.jpg" alt="Produto 2">
+            <h2>Cigarro de Palha</h2>
+            <p>Cigarro de palha Jack</p>
             <p>Preço: R$ 20,00</p>
-            <button onclick="addToCart('Produto 2', 20)">Adicionar ao Carrinho</button>
+            <button onclick="addToCart('Cigarro de Palha', 20.00)">Adicionar ao Carrinho</button>
         </div>
         <div class="product">
-            <img src="https://via.placeholder.com/150" alt="Produto 3">
-            <h2>Produto 3</h2>
-            <p>Descrição do Produto 3</p>
-            <p>Preço: R$ 30,00</p>
-            <button onclick="addToCart('Produto 3', 30)">Adicionar ao Carrinho</button>
+            <img src="imgs/eight.png" alt="Produto 3">
+            <h2>Cigarro Eight</h2>
+            <p>Cigarro Eight King Size</p>
+            <p>Preço: R$ 15,00</p>
+            <button onclick="addToCart('Cigarro Eight', 15.00)">Adicionar ao Carrinho</button>
         </div>
         <div class="product">
-            <img src="https://via.placeholder.com/150" alt="Produto 4">
-            <h2>Produto 4</h2>
-            <p>Descrição do Produto 4</p>
-            <p>Preço: R$ 40,00</p>
-            <button onclick="addToCart('Produto 4', 40)">Adicionar ao Carrinho</button>
+            <img src="imgs/bic.webp" alt="Produto 4">
+            <h2>Isqueiro BIC</h2>
+            <p>Isqueiro Bic...</p>
+            <p>Preço: R$ 15,00</p>
+            <button onclick="addToCart('Isqueiro BIC', 15.00)">Adicionar ao Carrinho</button>
         </div>
         <div class="product">
-            <img src="https://via.placeholder.com/150" alt="Produto 5">
-            <h2>Produto 5</h2>
-            <p>Descrição do Produto 5</p>
-            <p>Preço: R$ 50,00</p>
-            <button onclick="addToCart('Produto 5', 50)">Adicionar ao Carrinho</button>
+            <img src="imgs/maconha.jpg" alt="Produto 5">
+            <h2>Verdinha</h2>
+            <p>Verdinha panfleto</p>
+            <p>Preço: R$ 50,00 = 15g</p>
+            <button onclick="addToCart('Verdinha', 50.00)">Adicionar ao Carrinho</button>
         </div>
     </div>
 
@@ -52,9 +52,9 @@
         <div class="modal-content">
             <span class="close" onclick="toggleCart()">&times;</span>
             <h2>Carrinho de Compras</h2>
-            <ul id="cart">
+            <div id="cart-items">
                 <!-- Itens do carrinho serão adicionados aqui -->
-            </ul>
+            </div>
             <p>Total: R$ <span id="total">0,00</span></p>
         </div>
     </div>

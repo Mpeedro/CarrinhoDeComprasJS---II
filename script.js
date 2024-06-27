@@ -2,20 +2,38 @@ let cart = [];
 let total = 0;
 
 function addToCart(productName, productPrice) {
-    // Adiciona o produto ao carrinho
-    
+    let product = {
+        name: productName,
+        price: productPrice
+    };
 
-    // Atualiza o total
-    
+    cart.push(product);
+    total += productPrice;
 
-    // Renderiza o carrinho
-    
+    renderCart();
 }
 
 function renderCart() {
-    
+    let cartItems = document.getElementById('cart-items');
+    cartItems.innerHTML = '';
+
+    cart.forEach(product => {
+        let item = document.createElement('div');
+        item.classList.add('cart-item');
+        item.textContent = `${product.name} - R$ ${product.price.toFixed(2)}`;
+        cartItems.appendChild(item);
+    });
+
+    let totalElement = document.getElementById('total');
+    totalElement.textContent = total.toFixed(2);
 }
 
 function toggleCart() {
-   
+    let cartModal = document.getElementById('cart-modal');
+    cartModal.classList.toggle('show');
+
+    // Se o modal estiver visível, renderize o carrinho
+    if (cartModal.classList.contains('show')) {
+        renderCart();
+    }
 }
