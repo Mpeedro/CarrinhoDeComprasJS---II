@@ -1,0 +1,176 @@
+body{
+    margin: 0;
+    overflow-x: hidden;
+    
+}
+
+section{
+   width: 100%;
+
+}
+
+.sectionlogin{
+    float: left;
+    margin: 0%;
+    background-color:#8bbbca;
+    height:900px;
+    width: 500px;
+    padding: 40px;
+}
+
+.sectionlogin div {
+    margin-top: 200px;
+    margin-left: 60px;
+    
+    
+}
+
+.sectionlogin div h1{
+    color: #efeff0;
+    font-family: "Roboto Slab", serif;
+    font-size: 45px;
+}
+
+.sectionlogin div p{
+    color: #efeff0;
+    font-family: "Oxygen", sans-serif;
+    font-size: 20px;
+
+}
+
+.sectionlogin button{
+    border-radius: 30px;
+    width: 170px;
+    height: 50px;
+    background-color: transparent;
+    border: 2.5px solid white;
+    color: white;
+    font-weight: bold;
+    font-family: "Roboto Slab", serif;
+    margin-top: 50px;
+    margin-left: 20px;
+    
+}
+
+.sectionlogin button:hover{
+        background-color: #acacac;
+        border: #acacac;
+        font-size: 15px;
+  
+}
+
+.crie{
+    width: 60%; 
+    float: left; 
+    margin-right: 5%; 
+    background-color: white; 
+    padding: 20px; 
+    box-sizing: border-box; /
+  
+   
+}
+
+.crie h1{
+    color: #8bbbca;
+    font-family: "Roboto Slab", serif;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.crie p{
+    color: #acacac;
+    font-family: "Oxygen", sans-serif;
+    text-align: center;
+}
+
+.form{
+  
+  margin-left: 380px;
+  margin-top: 60px; 
+  font-size: 20px;  
+}
+
+.formbottom{
+    margin-bottom: 20px;
+    display:flex;
+    height: 44px;
+    width: 330px;
+    background-color: #d9d9d9;
+    border:#d9d9d9 ; 
+    border-radius: 45px;
+}
+
+
+.formbottomcad{
+    border-radius: 30px;
+    width: 170px;
+    height: 50px;
+    background-color:#8bbbca;
+   border: white;
+   text-align: center;
+   margin-left: 80px;
+   margin-top: 50px;
+   font-family: "Roboto Slab", serif;
+   color: white;
+   font-weight: bold;
+
+}
+
+.formbottomcad:hover{
+    background-color: #acacac;
+    font-size: 15px;
+
+}
+
+@media only screen and (max-width: 830px) {
+    .crie h1{
+        margin-left: 100px;
+        width:50%;
+       
+    }
+    .crie p{
+        margin-left: 100px;
+        width: 50%;
+
+    }
+
+    .form{
+        width: 50px; 
+       margin-left: -10%;
+
+    }
+
+    section{
+        width: 80px;
+        height: 10px;
+    }
+     .crie{
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 520px) {
+    .crie h1{
+        margin-left: 100px;
+        width:50%;
+       
+    }
+    .crie p{
+        margin-left: 100px;
+        width: 50%;
+
+    }
+
+    .form{
+        width: 50px; 
+       margin-left: -10%;
+
+    }
+    section{
+        width: 80px;
+        height: 100px;
+    }
+     .crie{
+        text-align: center;
+    }
+}

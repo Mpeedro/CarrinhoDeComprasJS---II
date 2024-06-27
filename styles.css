@@ -68,4 +68,57 @@ button:hover {
     border: none;
     border-radius: 10px;
     font-size: 20px;
-    cursor: pointer
+    cursor: pointer;
+}
+
+.cart-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.modal {
+    position: fixed;
+    top: 20px;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: -1px 0 10px rgba(0, 0, 0, 0.1);
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 1000;
+}
+
+.modal.show {
+    transform: translateX(0);
+}
+
+.modal-content {
+    padding: 20px;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+#cart-items {
+    margin-top: 20px;
+}
+
+.cart-item {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+#total {
+    font-weight: bold;
+}

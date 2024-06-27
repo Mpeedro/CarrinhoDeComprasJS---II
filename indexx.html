@@ -46,16 +46,18 @@
         </div>
     </div>
 
-    <button class="cart-button" onclick="toggleCart()">🛒 Ver Carrinho</button>
+    <div class="cart-container">
+        <button class="cart-button" onclick="toggleCart()">🛒 Ver Carrinho</button>
 
-    <div id="cart-modal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="toggleCart()">&times;</span>
-            <h2>Carrinho de Compras</h2>
-            <div id="cart-items">
-                <!-- Itens do carrinho serão adicionados aqui -->
+        <div id="cart-modal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="toggleCart()">&times;</span>
+                <h2>Carrinho de Compras</h2>
+                <div id="cart-items">
+                    <!-- Itens do carrinho serão adicionados aqui -->
+                </div>
+                <p>Total: R$ <span id="total">0,00</span></p>
             </div>
-            <p>Total: R$ <span id="total">0,00</span></p>
         </div>
     </div>
 

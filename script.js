@@ -26,14 +26,17 @@ function renderCart() {
 
     let totalElement = document.getElementById('total');
     totalElement.textContent = total.toFixed(2);
+
+    // Mostra o carrinho ao adicionar item
+    showCart();
 }
 
 function toggleCart() {
-    let cartModal = document.getElementById('cart-modal');
-    cartModal.classList.toggle('show');
+    const modal = document.getElementById('cart-modal');
+    modal.classList.toggle('show');
+}
 
-    // Se o modal estiver visível, renderize o carrinho
-    if (cartModal.classList.contains('show')) {
-        renderCart();
-    }
+function showCart() {
+    const modal = document.getElementById('cart-modal');
+    modal.classList.add('show');
 }
